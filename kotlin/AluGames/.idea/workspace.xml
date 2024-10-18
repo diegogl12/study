@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b57d74d-2f23-4494-b560-9183489e4ca9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jogos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Aluguel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Aluguel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Gamer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Gamer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/testeJson.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Jogo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Jogo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Plano.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Plano.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/PlanoAssinatura.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/PlanoAssinatura.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/PlanoAvulso.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/PlanoAvulso.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteJson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteJson.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,7 @@
       <list>
         <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -75,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729172851536</updated>
-      <workItem from="1729172852638" duration="7033000" />
+      <workItem from="1729172852638" duration="13909000" />
     </task>
     <servers />
   </component>
