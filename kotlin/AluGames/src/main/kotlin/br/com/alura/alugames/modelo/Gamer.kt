@@ -4,7 +4,7 @@ import java.time.LocalDate
 import java.util.*
 import kotlin.random.Random
 
-data class Gamer(var nome:String, var email:String) {
+data class Gamer(var nome:String, var email:String): Recomendavel {
     var dataNascimento:String? = null
     var usuario:String? = null
         set(valor) {
@@ -20,6 +20,24 @@ data class Gamer(var nome:String, var email:String) {
     val jogosBuscados = mutableListOf<Jogo?>()
 
     val jogosAlugados = mutableListOf<Aluguel>()
+    private val listaNotas = mutableListOf<Int>()
+    val jogosRecomendados = mutableListOf<Jogo>()
+
+    override val media: Double
+        get() = listaNotas.average()
+
+    override fun recomendar(nota: Int) {
+        if(nota <= 10 || nota >= 1 ) {
+            listaNotas.add(nota)
+        } else {
+            println("Nota inserida não válida!")
+        }
+    }
+
+    fun recomendarJogo(jogo: Jogo, nota: Int) {
+        jogo.recomendar(nota)
+        jogosRecomendados.add(jogo)
+    }
 
     constructor(nome: String, email: String, dataNascimento:String, usuario:String):
     //o this são os parametros do construtor default
@@ -40,7 +58,14 @@ data class Gamer(var nome:String, var email:String) {
     }
 
     override fun toString(): String {
-        return "Gamer(nome='$nome', email='$email', dataNascimento=$dataNascimento, usuario=$usuario, idInterno=$idInterno)"
+        return "Gamer:\n" +
+                "nome='$nome',\n"+
+                "email='$email',\n" +
+                "dataNascimento=$dataNascimento,\n" +
+                "usuario=$usuario,\n" +
+                "idInterno=$idInterno,\n"+
+                "reputação: $media\n"
+
     }
 
     private fun criarIdInterno() {
