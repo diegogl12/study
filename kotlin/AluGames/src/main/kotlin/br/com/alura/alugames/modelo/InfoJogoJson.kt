@@ -1,6 +1,7 @@
 package br.com.alura.alugames.modelo
 
 data class InfoJogoJson(
+    val id: Int?,
     val titulo: String,
     val capa: String,
     val preco: Double,

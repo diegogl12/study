@@ -5,7 +5,7 @@ import br.com.alura.alugames.modelo.Gamer
 fun main(){
     val gamer1 = Gamer("Diego", "diego@email.com")
 
-    val gamer2 = Gamer("Gomes", "gomes@email.com", "15/01/1996", "diegogl12")
+    val gamer2 = Gamer(null, "Gomes", "gomes@email.com", "15/01/1996", "diegogl12")
 
     gamer1.let{
         it.dataNascimento = "18/09/2000"

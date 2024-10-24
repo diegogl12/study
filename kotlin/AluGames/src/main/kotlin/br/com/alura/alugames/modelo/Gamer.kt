@@ -5,6 +5,7 @@ import java.util.*
 import kotlin.random.Random
 
 data class Gamer(var nome:String, var email:String): Recomendavel {
+    var id:String? = null
     var dataNascimento:String? = null
     var usuario:String? = null
         set(valor) {
@@ -16,7 +17,7 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
     var idInterno:String? = null
         private set
 
-    var plano: Plano = PlanoAvulso("BRONZE")
+    var plano: Plano = PlanoAvulso(null, "BRONZE")
     val jogosBuscados = mutableListOf<Jogo?>()
 
     val jogosAlugados = mutableListOf<Aluguel>()
@@ -39,7 +40,7 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
         jogosRecomendados.add(jogo)
     }
 
-    constructor(nome: String, email: String, dataNascimento:String, usuario:String):
+    constructor(id: String?, nome: String, email: String, dataNascimento:String, usuario:String):
     //o this são os parametros do construtor default
     this(nome, email) {
         // este bloco informa quais parâmetros do construtor vão se relacionar com as
@@ -59,6 +60,7 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
 
     override fun toString(): String {
         return "Gamer:\n" +
+                "ID=$id\n"+
                 "nome='$nome',\n"+
                 "email='$email',\n" +
                 "dataNascimento=$dataNascimento,\n" +
@@ -111,7 +113,7 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
                 println("Digite seu nome de usuário:")
                 val usuario = leitura.nextLine()
 
-                return Gamer(nome, email, nascimento, usuario)
+                return Gamer(null, nome, email, nascimento, usuario)
             } else {
                 return Gamer(nome, email)
             }

@@ -1,6 +1,6 @@
 package br.com.alura.alugames.modelo
 
-class PlanoAvulso(tipo: String): Plano(tipo){
+class PlanoAvulso(id: String?, tipo: String): Plano(id, tipo){
 
     override fun obterValor(aluguel: Aluguel): Double {
         var valorOriginal = super.obterValor(aluguel);
@@ -11,5 +11,11 @@ class PlanoAvulso(tipo: String): Plano(tipo){
         } else {
             valorOriginal
         }
+    }
+
+    override fun toString(): String {
+        return "Plano Avulso:\n"+
+                "ID: $id\n"+
+                "Tipo: $tipo\n"
     }
 }
