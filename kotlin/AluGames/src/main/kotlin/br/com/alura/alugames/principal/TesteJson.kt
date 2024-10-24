@@ -42,7 +42,11 @@ fun main() {
 //    println(gamerCaroline.jogosAlugados)
 
     val gamerCamila = listaGamers.get(5)
+<<<<<<< HEAD
     gamerCamila.plano = PlanoAssinatura(null, "PRATA", 9.90, 3, 0.15)
+=======
+    gamerCamila.plano = PlanoAssinatura("PRATA", 9.90, 3, 0.15)
+>>>>>>> main
 
     gamerCamila.alugaJogo(jogoResidentVillage, periodo1)
     gamerCamila.alugaJogo(jogoSpider, periodo2)
