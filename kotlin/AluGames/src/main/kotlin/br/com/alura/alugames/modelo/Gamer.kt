@@ -5,10 +5,7 @@ import java.util.*
 import kotlin.random.Random
 
 data class Gamer(var nome:String, var email:String): Recomendavel {
-<<<<<<< HEAD
     var id:String? = null
-=======
->>>>>>> main
     var dataNascimento:String? = null
     var usuario:String? = null
         set(valor) {
@@ -26,25 +23,6 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
     val jogosAlugados = mutableListOf<Aluguel>()
     private val listaNotas = mutableListOf<Int>()
     val jogosRecomendados = mutableListOf<Jogo>()
-<<<<<<< HEAD
-=======
-
-    override val media: Double
-        get() = listaNotas.average()
-
-    override fun recomendar(nota: Int) {
-        if(nota <= 10 || nota >= 1 ) {
-            listaNotas.add(nota)
-        } else {
-            println("Nota inserida não válida!")
-        }
-    }
-
-    fun recomendarJogo(jogo: Jogo, nota: Int) {
-        jogo.recomendar(nota)
-        jogosRecomendados.add(jogo)
-    }
->>>>>>> main
 
     override val media: Double
         get() = listaNotas.average()
@@ -82,10 +60,7 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
 
     override fun toString(): String {
         return "Gamer:\n" +
-<<<<<<< HEAD
                 "ID=$id\n"+
-=======
->>>>>>> main
                 "nome='$nome',\n"+
                 "email='$email',\n" +
                 "dataNascimento=$dataNascimento,\n" +

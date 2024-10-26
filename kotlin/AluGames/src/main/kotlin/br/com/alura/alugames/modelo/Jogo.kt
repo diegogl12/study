@@ -2,10 +2,7 @@ package br.com.alura.alugames.modelo
 import com.google.gson.annotations.Expose
 
 data class Jogo(@Expose val titulo:String, @Expose val capa:String): Recomendavel {
-<<<<<<< HEAD
     var id:Int? = null
-=======
->>>>>>> main
     var descricao:String? = null
     var preco = 0.0
     var listaNotas = mutableListOf<Int>()
